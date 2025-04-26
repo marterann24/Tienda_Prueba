@@ -1,14 +1,14 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-export default function Tienda() {
+export default function Catalogo() {
     const navigate = useNavigate();
 
     return (
         <div className="container">
-            <h1>Bienvenido a la tienda online</h1>
-            <button onClick={() => navigate('/catalogo')}>
-                Ir al catálogo
+            <h1>Catálogo de productos</h1>
+            <button onClick={() => navigate('/tienda')}>
+                Volver a tienda
             </button>
         </div>
     );

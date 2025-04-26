@@ -1,32 +1,21 @@
-/* 
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import '../css/app.css'; // Importar CSS
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Tienda from './components/Tienda';
+import Catalogo from './components/Catalogo';
+import '../css/tienda.css';
 
 function App() {
     return (
-        <div>
-            <h1>¡Hola desde React con CSS puro!</h1>
-        </div>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/tienda" element={<Tienda />} />
+                <Route path="/catalogo" element={<Catalogo />} />
+            </Routes>
+        </BrowserRouter>
     );
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
-*/
-
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import Tienda from './components/Tienda';
-import '../css/app.css'; // Importa app.css si quieres estilos generales
-
-const container = document.getElementById('app');
+const container = document.getElementById('root');
 const root = createRoot(container);
-
-root.render(
-    <React.StrictMode>
-        <Tienda />
-    </React.StrictMode>
-);
-
-
+root.render(<App />);
