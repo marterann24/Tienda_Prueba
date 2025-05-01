@@ -8,5 +8,7 @@
 </head>
 <body>
     <div id="root"></div>
+    <h3> Ventana home </h3>
+
 </body>
 </html>

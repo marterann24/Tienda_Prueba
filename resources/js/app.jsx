@@ -11,6 +11,7 @@ function App() {
             <Routes>
                 <Route path="/tienda" element={<Tienda />} />
                 <Route path="/catalogo" element={<Catalogo />} />
+                <Route path="/home" element={<welcome.blade.php/>}/> 
             </Routes>
         </BrowserRouter>
     );
