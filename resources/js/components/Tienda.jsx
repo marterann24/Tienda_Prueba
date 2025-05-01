@@ -6,9 +6,9 @@ export default function Tienda() {
 
     return (
         <div className="container">
-            <h1>Bienvenido a la tienda online</h1>
+            <h1>Bienvenido a Desarrollo Web </h1>
             <button onClick={() => navigate('/catalogo')}>
-                Ir al catálogo
+            Siguiente
             </button>
         </div>
     );
